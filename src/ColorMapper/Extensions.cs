@@ -5,7 +5,7 @@ namespace ColorMapper;
 
 public static class IColormapExtensions
 {
-    public static ScottPlot.Image GetImage(this IColormap colormap, int height = 1, int width = 256)
+    public static ScottPlot.Image GetImage(this IColormap colormap, int width = 256, int height = 1)
     {
         using SKBitmap bmp = new(width, height);
         using SKCanvas canvas = new(bmp);
