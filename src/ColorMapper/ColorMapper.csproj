@@ -1,15 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net9.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net9.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <NoWarn>NU1701</NoWarn>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="ScottPlot.WinForms" Version="5.0.40" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="ScottPlot.WinForms" Version="5.0.45" />
+    </ItemGroup>
 
 </Project>

@@ -29,7 +29,7 @@ public partial class Form1 : Form
             colors.Add(ScottPlot.Color.FromHex(item.ToString()!));
         }
 
-        IColormap cmap = new ScottPlot.Colormaps.LinearSegmented(colors.ToArray());
+        IColormap cmap = new ScottPlot.Colormaps.CustomInterpolated(colors.ToArray());
         UpdateColorbar(cmap);
         UpdatePlot(cmap);
     }
